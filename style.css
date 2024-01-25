@@ -25,6 +25,7 @@ nav{
     height: 80px;
     display: flex;
     justify-content: center;
+    background-color: white;
 }
 
 ul{
@@ -69,7 +70,9 @@ ul{
       "main-txt main-img";
 }
 
-
+.questions{
+    margin-bottom: 5rem;
+}
   
 .main-txt{ 
     grid-area: main-txt; 
@@ -121,6 +124,12 @@ ul{
     margin-top: 5rem;
     min-height: 30vh;
     background-color: #041E42;
+}
+
+.contact-ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .carrousel{
@@ -247,6 +256,7 @@ btn-slide2:hover span.title2 {
     margin: 1rem 0;
     font-size: 30px;
     cursor: pointer;
+    margin: 2rem 0;
 }
 
 .question-answer{
