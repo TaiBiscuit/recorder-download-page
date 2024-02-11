@@ -14,18 +14,14 @@ html, body{
 
 }
 
-main{
-    height: 98%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 nav{
     height: 80px;
     display: flex;
     justify-content: center;
     background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
 }
 
 ul{
@@ -47,7 +43,7 @@ ul{
 .main-section{
     display: flex;
     flex-direction: column;
-    min-height: 86vh;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
 }
@@ -55,23 +51,14 @@ ul{
 .third-section{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 50vh;
     justify-content: center;
     align-items: center;
 }
 
-.main-section-container{  
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "main-txt main-img";
-}
 
 .questions{
-    margin-bottom: 5rem;
+    margin: 5rem 0;
 }
   
 .main-txt{ 
@@ -80,14 +67,15 @@ ul{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 3rem;
 }
 
 .txt{
-    margin: 0 3rem;
+    margin: 3rem 0;
 }
   
 .sub-title{
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 30px;
 }
 
