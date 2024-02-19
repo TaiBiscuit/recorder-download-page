@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 p{
@@ -11,6 +12,7 @@ p{
 
 html, body{
     background-color: #5072A7;
+    font-family: 'Inter', sans-serif;
 
 }
 
@@ -30,6 +32,19 @@ ul{
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+li{
+    transition: all 0.2s;
+}
+
+li:hover{
+    transform: scale(1.2);
+}
+
+a{
+    color: black;
+    text-decoration: none;
 }
 
 .main-container{
@@ -117,7 +132,7 @@ ul{
 .contact-ul{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .carrousel{
@@ -180,7 +195,9 @@ btn-slide2:hover span.title2 {
 }
 
 .btn-slide2 span.circle2 {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #0099cc;
     color: #fff;
     position: absolute;
@@ -214,7 +231,7 @@ btn-slide2:hover span.title2 {
 .btn-slide2 span.title2,
   .btn-slide2 span.title-hover2 {
     color: #efa666;
-    left: 80px;
+    left: 70px;
   }
 
 .btn-slide2 span.title-hover2 {
@@ -255,3 +272,4 @@ btn-slide2:hover span.title2 {
 .hidden{
     display: none;
 }
+
