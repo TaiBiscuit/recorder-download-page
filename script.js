@@ -12,8 +12,10 @@ didYouKnow.forEach(section => {
         let child = e.target.firstElementChild;
         if(child){
             if(child.classList.contains('hidden')){
+                child.style.visibility = 'visible'
                 child.classList.remove('hidden')
             } else {
+                child.style.visibility = 'hidden'
                 child.classList.add('hidden');
             }
         }
