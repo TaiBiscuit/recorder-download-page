@@ -11,9 +11,16 @@ p{
 }
 
 html, body{
-    background-color: #5072A7;
+    background: rgb(131,173,238);
+    background: linear-gradient(120deg, rgba(131,173,238,1) 0%, rgba(80,114,167,1) 88%); 
     font-family: 'Inter', sans-serif;
 
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 
 nav{
@@ -22,16 +29,17 @@ nav{
     justify-content: center;
     background-color: rgb(10, 11, 68);
     width: 100%;
-    position: fixed;
-    z-index: 5;
 }
 
 ul{
-    margin-right: 1rem;
     list-style: none;
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+.nav-li{
+    margin-right: 2.5rem;
 }
 
 li{
@@ -63,21 +71,31 @@ a{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    justify-content: center;
     align-items: center;
+}
+
+.main-section-container{
+    display: flex;
+    margin-top: 4rem;
+    flex-direction: column;
+}
+
+.main-section-content{
+    display: flex;
 }
 
 .third-section{
     display: flex;
     flex-direction: column;
-    min-height: 50vh;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
 }
 
 .questions{
-    margin: 5rem 0;
+    margin: 10rem 0;
     color: white;
+    transition: all 0.3s ease;
 }
   
 .questions h1{
@@ -86,36 +104,38 @@ a{
 }
 
 .main-txt{ 
-    grid-area: main-txt; 
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 5rem 0;
+    padding: 0 2rem;
 }
 
 .txt{
-    margin: 3rem 0;
+    word-wrap: break-word;
+    width: 385px;
 }
   
 .sub-title{
     font-style: italic;
-    margin-top: 2rem;
+    color: white;
+    margin-bottom: 4rem;
     font-size: 50px;
+    text-align: center;
 }
 
 .main-img{ 
-    grid-area: main-img; 
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 3rem;
 }
 
 .product-img{
-    width: 50vw;
+    width: 35vw;
     height: 50vh;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 
@@ -126,14 +146,15 @@ a{
     align-items: center;
     width: 100%;
     margin-top: 5rem;
-    min-height: 30vh;
+    min-height: 50vh;
     background-color: #041E42;
 }
 
 .contact-ul{
-    width: 100%;
+    width: 50%;
+    margin-top: 5rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .car-section{
@@ -244,6 +265,7 @@ btn-slide2:hover span.title2 {
 .contact-li{
     color: white;
     text-decoration: none;
+    margin: 0 1.4rem;
 }
 
 .car-section:hover{
@@ -269,3 +291,11 @@ btn-slide2:hover span.title2 {
     visibility:hidden;
 }
 
+@media only screen and (max-width:1500px){
+
+    .product-img{
+        width: 50vw;
+        height: 50vh;
+        border-radius: 5px;
+    }
+  }
